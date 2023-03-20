@@ -1,0 +1,43 @@
+.home {
+    background-image: url(../assets/img/background-image-70porcientopng.png);
+    height: 100vh;
+    @extend %bg-img-pos;
+}
+.andalaosa{
+    @include fuente-weight-size($black,50px);
+    @include padding-top-bottom(20px,20px);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.andalaosa__subtitle {
+    @include fuente-weight-size($extra-bold,23px);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.osa{
+    @include padding-top-bottom(150px,70px);
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        transform: scale(115%);
+        -webkit-transform: scale(115%);
+        -o-transform: scale(115%);
+        -moz-transform: scale(115%);
+    }
+}
+
+@media screen and (max-width: $bp-xs)
+{
+    .andalaosa{
+        @include padding-top-bottom(10px,10px);
+        font-size: 30px;
+    }
+    .andalaosa__subtitle {
+        font-size: 14px;
+        @include padding-l-r(40px,40px);
+        padding-bottom: 25%;
+    }
+    .osa{
+        @include padding-top-bottom(100px,70px);
+        width:270px;
+    }
+}

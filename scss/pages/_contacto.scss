@@ -1,0 +1,14 @@
+.contenido_contacto{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 5%;
+}
+.formulario{
+   justify-content: center;
+}
+.data{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

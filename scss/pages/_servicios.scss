@@ -1,0 +1,41 @@
+.servicios {
+    background-image: url(../assets/img/servicios.jpg);
+    @extend %bg-img-pos;
+    height: 1200px;
+}
+.servicios__what_we_do{
+    @include padding-top-bottom(8%,0);
+    @include padding-l-r(25%,25%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.servicios__items{
+    display: grid; 
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    @include padding-top-bottom(5%,0);
+    @include padding-l-r(10%,10%);
+}
+.servicios__items__cajitas {
+    padding: 15%;
+}
+
+@media screen and (max-width:$bp-xs)
+{
+    .servicios {
+        height: 1600px;
+    }
+    .servicios__what_we_do{
+        @include padding-l-r(15%,15%);
+    }
+    .servicios__items{
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto auto;
+        @include padding-top-bottom(10%,0);
+        @include padding-l-r(25%,25%);
+    }
+    .servicios__items__cajitas {
+        padding: 5%;        
+    }
+}

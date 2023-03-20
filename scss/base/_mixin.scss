@@ -1,0 +1,12 @@
+@mixin fuente-weight-size($f-weight,$f-size){
+    font-weight: $f-weight;
+    font-size: $f-size;
+}
+@mixin padding-top-bottom($pad-top,$pad-bottom){
+    padding-top: $pad-top;
+    padding-bottom: $pad-bottom;
+}
+@mixin padding-l-r($pad-left,$pad-right){
+    padding-left: $pad-left;
+    padding-right: $pad-right;
+}

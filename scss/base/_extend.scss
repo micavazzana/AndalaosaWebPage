@@ -1,0 +1,11 @@
+%flexcentrar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+%bg-img-pos{
+    background-position: center;
+    background-size: cover;
+}

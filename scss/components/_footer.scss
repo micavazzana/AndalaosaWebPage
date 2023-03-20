@@ -1,0 +1,38 @@
+.footer{
+    font-weight: $light;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding:25px;
+    padding-left: 50px; 
+    a{
+        i{
+            transition: all 0.5s ease;
+            &:hover{
+                transform: scale(135%);
+                -webkit-transform: scale(135%);
+                -o-transform: scale(135%);
+                -moz-transform: scale(135%);
+                color: #c52636;
+            }
+        }
+    }
+    @media screen and (max-width:$bp-xs)
+    {
+        justify-content: center;
+        padding-left: 0px;
+    }
+ }
+ .footer__gradient{
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     background: map-get($gradiente, gradiente-up);
+     @media screen and (max-width:$bp-xs)
+    {
+        position: relative;
+        padding-top: 20px;
+    }
+ }

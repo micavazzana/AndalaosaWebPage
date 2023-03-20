@@ -1,0 +1,29 @@
+/*
+font-family: pragmatica-extended, sans-serif;
+font-weight: 300(light) / 400(book)/ 500(medium)
+700(bold) / 800(extra bold) / 900 (black);
+font-style: normal;
+*/
+
+
+//base
+@import './base/variables';
+@import './base/maps';
+@import './base/extend';
+@import './base/mixin';
+
+//ESTILO GENERAL
+@import './components/general';
+
+//componentes
+@import './components/header';
+@import './components/footer';
+
+//pages
+@import './pages/home';
+@import './pages/sobre-nos';
+@import './pages/servicios';
+@import './pages/portfolio';
+@import './pages/contacto';
+
+
