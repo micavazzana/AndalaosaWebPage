@@ -374,6 +374,9 @@ header nav ul li a {
   .servicios__items__cajitas {
     padding: 5%;
   }
+  .servicios__btn {
+    margin-top: 50px;
+  }
 }
 .gallery {
   display: grid;
@@ -419,6 +422,9 @@ header nav ul li a {
   }
   .box img {
     width: 90%;
+  }
+  .box:hover .button-play {
+    transform: scale(0%);
   }
 }
 .contenido_contacto {
@@ -480,17 +486,17 @@ ul li {
   .formulario .input {
     font-weight: 300;
     font-size: 13px;
-    width: 400px;
+    width: 320px;
   }
   .formulario textarea {
     font-weight: 300;
     font-size: 13px;
-    width: 400px;
+    width: 320px;
     height: 150px;
   }
   .data {
     justify-content: center;
-    margin: 15px;
+    margin: 10px;
   }
 }
 

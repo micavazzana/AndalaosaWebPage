@@ -54,16 +54,16 @@ ul{
         margin: 15px;
         .input{
             @include fuente-weight-size($light,13px);
-            width: 400px;
+            width: 320px;
         } 
         textarea{
             @include fuente-weight-size($light,13px);
-            width: 400px;
+            width: 320px;
             height: 150px;
         }
     }
     .data{
         justify-content: center;
-        margin: 15px;
+        margin: 10px;
     }
 }
