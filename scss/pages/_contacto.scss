@@ -15,15 +15,25 @@
         @include fuente-weight-size($light,16px);
         background-color: #1e1e1e;
         width: 700px;
-        border: 0;
-    } 
+        border-width: 0;
+        border-bottom-width: 1px;
+        border-style: solid;
+        border-color: #fff;
+        padding:10px;
+    }
+    ::placeholder{
+        color:#cecece;
+    }
     textarea{
         @include fuente-weight-size($light,16px);
         background-color: #1e1e1e;
+        border-color: #fff;
         border-radius: 10px;
         width: 700px;
         height: 200px;
         resize: none;
+        padding:10px;
+        color: #cecece;
     }
 }
 .data{
@@ -32,12 +42,17 @@
     align-items: center;
     margin: 20px;
     li {
-        margin:20px;
-    }
-}
-ul{
-    li{
+        margin:10px;
         list-style: none;
+        a{
+            color: #fff;
+            i{
+                margin-right: 7px;
+            }
+            &:hover{
+                color:#c52636;
+            }
+        }
     }
 }
 
@@ -46,7 +61,7 @@ ul{
 {
     .contenido_contacto{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 0.7fr;
     }
     .formulario{
         align-items: center;
@@ -59,11 +74,12 @@ ul{
         textarea{
             @include fuente-weight-size($light,13px);
             width: 320px;
-            height: 150px;
+            height: 180px;
         }
     }
     .data{
         justify-content: center;
         margin: 10px;
+        padding-top: 70px;
     }
 }
