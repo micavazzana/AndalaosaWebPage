@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['enviar'])) {
     // Recopilar los datos del formulario
     $nombre = $_POST['nombre'];
     $correo = $_POST['mail'];
