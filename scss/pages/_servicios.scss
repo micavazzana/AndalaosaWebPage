@@ -24,18 +24,20 @@
 @media screen and (max-width:$bp-xs)
 {
     .servicios {
-        height: 1700px;
+        height: 1900px;
     }
     .servicios__what_we_do{
         @include padding-l-r(15%,15%);
     }
     .servicios__items{
+        
         grid-template-columns:1fr;
         grid-template-rows: auto auto auto;
         @include padding-top-bottom(10%,0);
         @include padding-l-r(25%,25%);
     }
     .servicios__items__cajitas {
+        font-size: 16px;
         padding: 5%;        
     }
     .servicios__btn{
