@@ -30,6 +30,7 @@ a {
     @include fuente-weight-size($light,16px);
     text-decoration: none;
     transition: all 0.5s ease-in-out;
+    color:#fff;
     &:visited{
         color: #fff;
     }
